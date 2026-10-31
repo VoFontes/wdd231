@@ -1,0 +1,73 @@
+/* Large Screen Styles */
+
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 1rem 5%;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 0.7rem 1.2rem;
+        border-radius: 4px;
+    }
+
+    /* Main Layout */
+    main {
+        padding: 1.5rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        gap: 1.5rem;
+    }
+
+    .about-section {
+        grid-column: 1;
+    }
+
+    .photo-section {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .courses-section {
+        grid-column: 1 / 3;
+    }
+
+    /* Course Filters */
+    .course-filters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        padding-left: max(5%, calc((100% - 1200px) / 2));
+        padding-right: max(5%, calc((100% - 1200px) / 2));
+    }
+}
