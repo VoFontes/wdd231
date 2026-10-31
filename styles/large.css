@@ -25,11 +25,12 @@
         border-radius: 4px;
     }
 
-    /* Main Layout */
+    /* Main */
     main {
         padding: 1.5rem;
     }
 
+    /* Home Grid */
     .home-grid {
         grid-template-columns: 2fr 1fr;
         align-items: start;
@@ -54,6 +55,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Course List */
     #course-list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -63,6 +65,8 @@
         padding: 2rem;
     }
 }
+
+/* Extra Large Screens */
 
 @media screen and (min-width: 1200px) {
 

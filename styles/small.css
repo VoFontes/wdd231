@@ -7,6 +7,9 @@
     --text-color: #263238;
     --white: #ffffff;
     --border-color: #d8dee5;
+    --completed-background: #d9eee3;
+    --completed-border: #36845b;
+    --completed-text: #174d32;
 }
 
 * {
@@ -127,12 +130,15 @@ h2 {
     margin: 0;
 }
 
+/* Student Photo */
 .photo-section img {
-    display: block;
     width: 100%;
-    max-width: 350px;
-    margin: 1rem auto;
-    border-radius: 5px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* Course Filters */
@@ -165,12 +171,19 @@ nav a:focus-visible,
     outline-offset: 3px;
 }
 
+.course-filters button.active-filter {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
 #credit-total {
     text-align: center;
     font-weight: 700;
     padding: 0 1rem;
 }
 
+/* Course List */
 #course-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -181,16 +194,27 @@ nav a:focus-visible,
 .course-card {
     background-color: #e8edf2;
     border: 1px solid var(--border-color);
+    border-left: 5px solid var(--secondary-color);
     border-radius: 5px;
     padding: 1rem;
     text-align: center;
     font-weight: 700;
 }
 
+.course-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
 .course-card.completed {
-    background-color: #d9eee3;
-    border-color: #36845b;
-    color: #174d32;
+    background-color: var(--completed-background);
+    border-color: var(--completed-border);
+    border-left: 5px solid var(--completed-border);
+    color: var(--completed-text);
+}
+
+.course-card.completed h3 {
+    color: var(--completed-text);
 }
 
 .course-card p {
@@ -232,40 +256,4 @@ footer p {
 
 #lastModified {
     font-size: 0.85rem;
-}
-
-/* Course Cards */
-
-.course-card h3 {
-    margin-top: 0;
-    color: var(--primary-color);
-}
-
-.course-card.completed h3 {
-    color: #174d32;
-}
-
-.course-card.completed {
-    border-left: 5px solid #36845b;
-}
-
-.course-card:not(.completed) {
-    border-left: 5px solid var(--secondary-color);
-}
-
-/* Active Filter */
-
-.course-filters button.active-filter {
-    background-color: var(--accent-color);
-    color: #263238;
-    font-weight: 700;
-}
-
-.photo-section img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
 }
