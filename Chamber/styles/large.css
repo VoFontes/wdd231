@@ -1,0 +1,63 @@
+/* LARGE SCREEN DESIGN */
+
+@media screen and (min-width: 700px) {
+
+    /* HEADER */
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 0.7rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* MAIN */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* GRID */
+
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

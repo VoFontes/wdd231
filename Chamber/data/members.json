@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sonora Technology Solutions",
+        "address": "Blvd. Kino 315, Hermosillo, Sonora",
+        "phone": "+52 662 123 4567",
+        "website": "https://example.com",
+        "image": "company-1.webp",
+        "membership": 3,
+        "description": "Technology and software development services."
+    },
+    {
+        "name": "Desert Construction",
+        "address": "Av. Reforma 120, Hermosillo, Sonora",
+        "phone": "+52 662 234 5678",
+        "website": "https://example.com",
+        "image": "company-2.webp",
+        "membership": 2,
+        "description": "Residential and commercial construction services."
+    },
+    {
+        "name": "Sonora Travel Agency",
+        "address": "Calle Morelos 450, Hermosillo, Sonora",
+        "phone": "+52 662 345 6789",
+        "website": "https://example.com",
+        "image": "company-3.webp",
+        "membership": 3,
+        "description": "Travel and tourism experiences throughout Sonora."
+    },
+    {
+        "name": "El Buen Sabor Restaurant",
+        "address": "Blvd. Colosio 220, Hermosillo, Sonora",
+        "phone": "+52 662 456 7890",
+        "website": "https://example.com",
+        "image": "company-4.webp",
+        "membership": 1,
+        "description": "Traditional Sonoran food and local cuisine."
+    },
+    {
+        "name": "Sonora Auto Services",
+        "address": "Av. Solidaridad 890, Hermosillo, Sonora",
+        "phone": "+52 662 567 8901",
+        "website": "https://example.com",
+        "image": "company-5.webp",
+        "membership": 2,
+        "description": "Automotive repair and maintenance services."
+    },
+    {
+        "name": "Pacific Real Estate",
+        "address": "Calle Serdan 150, Guaymas, Sonora",
+        "phone": "+52 622 678 9012",
+        "website": "https://example.com",
+        "image": "company-6.webp",
+        "membership": 1,
+        "description": "Real estate and property management services."
+    },
+    {
+        "name": "Sonora Financial Group",
+        "address": "Blvd. Navarrete 500, Hermosillo, Sonora",
+        "phone": "+52 662 789 0123",
+        "website": "https://example.com",
+        "image": "company-7.webp",
+        "membership": 3,
+        "description": "Financial consulting and business services."
+    }
+]
