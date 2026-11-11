@@ -1,9 +1,12 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Discover local businesses, services, and organizations in Sonora, Mexico. Explore the Sonora Chamber of Commerce business directory.">
 
     <meta name="author" content="Victor Omar Fontes Delgado">
@@ -11,14 +14,19 @@
     <title>Business Directory | Sonora Chamber of Commerce</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:title" content="Sonora Chamber of Commerce | Business Directory">
-    <meta property="og:description" content="Explore local businesses and services in Sonora, Mexico.">
-    <meta property="og:image" content="https://vofontes.github.io/wdd231/chamber/images/social-preview.webp">
-    <meta property="og:url" content="https://vofontes.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore local businesses and services in Sonora, Mexico. Discover the businesses helping Sonora grow.">
+    <meta property="og:image" content="https://vofontes.github.io/wdd231/Chamber/images/logo.svg">
+    <meta property="og:url" content="https://vofontes.github.io/wdd231/Chamber/directory.html">
     <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -31,17 +39,20 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="header-container">
 
             <div class="logo">
                 <img src="images/logo.svg" alt="Sonora Chamber of Commerce logo">
+
                 <div>
-                    <h1>Sonora</h1>
+                    <p class="site-name">Sonora</p>
                     <p>Chamber of Commerce</p>
                 </div>
             </div>
 
+            <!-- Mobile Navigation Button -->
             <button id="menu-button"
                     type="button"
                     aria-label="Open navigation menu"
@@ -50,27 +61,41 @@
                 ☰
             </button>
 
+            <!-- Navigation -->
             <nav id="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html" class="active" aria-current="page">Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
                 </ul>
             </nav>
 
         </div>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
 
-        <h2>Business Directory</h2>
+        <h1>Business Directory</h1>
 
         <p class="directory-intro">
             Discover local businesses and organizations
             that contribute to the growth of Sonora.
         </p>
 
+        <!-- VIEW BUTTONS -->
         <div class="view-buttons">
 
             <button id="grid-button"
@@ -88,42 +113,28 @@
 
         </div>
 
+        <!-- BUSINESS MEMBERS -->
         <div id="members-container" class="grid-view">
             <!-- Business members will be generated using JavaScript -->
         </div>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
 
         <div class="footer-container">
 
             <div class="contact-info">
                 <h3>Sonora Chamber of Commerce</h3>
+
                 <p>Sonora, Mexico</p>
                 <p>Email: info@example.com</p>
                 <p>Phone: +52 662 000 0000</p>
             </div>
 
             <div class="development-info">
+
                 <p>
                     &copy; <span id="current-year"></span>
-                    Sonora Chamber of Commerce
-                </p>
-
-                <p>Victor Omar Fontes Delgado</p>
-
-                <p>WDD 231 - Web Frontend Development I</p>
-
-                <p>
-                    Last Modification:
-                    <span id="last-modified"></span>
-                </p>
-            </div>
-
-        </div>
-
-    </footer>
-
-</body>
-</html>
+                    Sonora

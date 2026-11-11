@@ -21,13 +21,22 @@ async function getMembers() {
 
     } catch (error) {
         console.error("Error loading members:", error);
-        membersContainer.textContent = "Unable to load business directory.";
+
+        if (membersContainer) {
+            membersContainer.textContent =
+                "Unable to load business directory.";
+        }
     }
 }
 
 
 // DISPLAY MEMBERS
 function displayMembers(members) {
+
+    if (!membersContainer) {
+        console.error("Members container was not found.");
+        return;
+    }
 
     membersContainer.innerHTML = "";
 
@@ -82,62 +91,74 @@ function getMembership(level) {
 
 
 // GRID VIEW
-gridButton.addEventListener("click", () => {
+if (gridButton && listButton && membersContainer) {
 
-    membersContainer.classList.remove("list-view");
-    membersContainer.classList.add("grid-view");
+    gridButton.addEventListener("click", () => {
 
-    gridButton.classList.add("active");
-    listButton.classList.remove("active");
+        membersContainer.classList.remove("list-view");
+        membersContainer.classList.add("grid-view");
 
-    // ACCESSIBILITY: UPDATE ARIA PRESSED
-    gridButton.setAttribute("aria-pressed", "true");
-    listButton.setAttribute("aria-pressed", "false");
+        gridButton.classList.add("active");
+        listButton.classList.remove("active");
 
-});
+        gridButton.setAttribute("aria-pressed", "true");
+        listButton.setAttribute("aria-pressed", "false");
+
+    });
 
 
-// LIST VIEW
-listButton.addEventListener("click", () => {
+    // LIST VIEW
+    listButton.addEventListener("click", () => {
 
-    membersContainer.classList.remove("grid-view");
-    membersContainer.classList.add("list-view");
+        membersContainer.classList.remove("grid-view");
+        membersContainer.classList.add("list-view");
 
-    listButton.classList.add("active");
-    gridButton.classList.remove("active");
+        listButton.classList.add("active");
+        gridButton.classList.remove("active");
 
-    // ACCESSIBILITY: UPDATE ARIA PRESSED
-    listButton.setAttribute("aria-pressed", "true");
-    gridButton.setAttribute("aria-pressed", "false");
+        listButton.setAttribute("aria-pressed", "true");
+        gridButton.setAttribute("aria-pressed", "false");
 
-});
+    });
+
+}
 
 
 // MOBILE NAVIGATION
-menuButton.addEventListener("click", () => {
+if (menuButton && navigation) {
 
-    navigation.classList.toggle("open");
+    menuButton.addEventListener("click", () => {
 
-    const isOpen = navigation.classList.contains("open");
+        navigation.classList.toggle("open");
 
-    menuButton.setAttribute("aria-expanded", isOpen);
+        const isOpen = navigation.classList.contains("open");
 
-    menuButton.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-    );
+        menuButton.setAttribute("aria-expanded", isOpen);
 
-});
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+
+    });
+
+}
 
 
 // FOOTER: CURRENT YEAR
-document.querySelector("#current-year").textContent =
-    new Date().getFullYear();
+const currentYear = document.querySelector("#current-year");
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
 
 
 // FOOTER: LAST MODIFICATION
-document.querySelector("#last-modified").textContent =
-    document.lastModified;
+const lastModified = document.querySelector("#last-modified");
+
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}
 
 
 // INITIALIZE DIRECTORY
