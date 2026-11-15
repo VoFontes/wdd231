@@ -61,3 +61,104 @@
     }
 
 }
+
+/* =================================
+   HOME PAGE - DESKTOP DESIGN
+================================= */
+
+@media screen and (min-width: 700px) {
+
+    /* HERO SECTION */
+
+    .hero {
+        margin-bottom: 3rem;
+    }
+
+    .hero img {
+        height: 450px;
+    }
+
+    .hero-content {
+        left: 5%;
+        right: 5%;
+        bottom: 3rem;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+
+    /* CURRENT EVENTS */
+
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+
+    /* WEATHER */
+
+    .weather-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .current-weather,
+    .forecast-section {
+        padding: 1.5rem;
+    }
+
+
+    /* BUSINESS SPOTLIGHTS */
+
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 1.5rem;
+    }
+
+}
+
+
+/* =================================
+   LARGE DESKTOP SCREENS
+================================= */
+
+@media screen and (min-width: 1000px) {
+
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+
+    /* BUSINESS SPOTLIGHTS */
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* WEATHER */
+
+    .weather-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

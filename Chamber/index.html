@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Welcome to the Sonora Chamber of Commerce. Discover local businesses, community events, weather information, and opportunities to connect with businesses in Sonora, Mexico.">
+
+    <meta name="author" content="Victor Omar Fontes Delgado">
+
+    <title>Home | Sonora Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sonora Chamber of Commerce">
+    <meta property="og:description" content="Discover businesses, events, and opportunities in Sonora, Mexico.">
+    <meta property="og:image" content="https://vofontes.github.io/wdd231/Chamber/images/hero.jpg">
+    <meta property="og:url" content="https://vofontes.github.io/wdd231/Chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+
+            <div class="logo">
+                <img src="images/logo.svg" alt="Sonora Chamber of Commerce logo">
+
+                <div>
+                    <p class="site-name">Sonora</p>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Button -->
+            <button id="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                ☰
+            </button>
+
+            <!-- Navigation -->
+            <nav id="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active" aria-current="page">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <img src="images/hero.jpg"
+                 alt="Panoramic landscape of Sonora, Mexico"
+                 fetchpriority="high">
+
+            <div class="hero-content">
+                <h1>Welcome to Sonora</h1>
+
+                <p>
+                    Connecting businesses, strengthening communities,
+                    and promoting economic growth.
+                </p>
+
+                <a href="join.html" class="hero-button">
+                    Join the Chamber
+                </a>
+            </div>
+
+        </section>
+
+        <!-- CURRENT EVENTS -->
+        <section class="events-section">
+
+            <h2>Current Events</h2>
+
+            <div class="events-container">
+
+                <article class="event-card">
+                    <h3>Local Business Networking</h3>
+
+                    <p>
+                        Connect with local entrepreneurs and discover
+                        new business opportunities in Sonora.
+                    </p>
+
+                    <p><strong>Date:</strong> Coming Soon</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Community Business Meeting</h3>
+
+                    <p>
+                        Join local business owners to discuss community
+                        development and economic growth.
+                    </p>
+
+                    <p><strong>Date:</strong> Coming Soon</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="weather-section">
+
+            <h2>Weather in Hermosillo</h2>
+
+            <div class="weather-container">
+
+                <!-- CURRENT WEATHER -->
+                <div class="current-weather">
+
+                    <h3>Current Weather</h3>
+
+                    <div id="current-weather">
+                        <p>Loading current weather...</p>
+                    </div>
+
+                </div>
+
+                <!-- THREE DAY FORECAST -->
+                <div class="forecast-section">
+
+                    <h3>3-Day Forecast</h3>
+
+                    <div id="weather-forecast">
+                        <p>Loading weather forecast...</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BUSINESS SPOTLIGHTS -->
+        <section class="spotlights-section">
+
+            <h2>Business Spotlights</h2>
+
+            <p class="spotlights-intro">
+                Discover some of the outstanding businesses
+                that support our local community.
+            </p>
+
+            <div id="spotlights-container" class="spotlights-container">
+
+                <p>Loading featured businesses...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="contact-info">
+
+                <h2>Sonora Chamber of Commerce</h2>
+
+                <p>Hermosillo, Sonora, Mexico</p>
+                <p>Email: info@sonorachamber.com</p>
+                <p>Phone: +52 662 2607122</p>
+
+            </div>
+
+            <div class="development-info">
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Sonora Chamber of Commerce
+                </p>
+
+                <p>Victor Omar Fontes Delgado</p>
+
+                <p>WDD 231 - Web Frontend Development I</p>
+
+                <p>
+                    Last Modification:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
