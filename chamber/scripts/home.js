@@ -145,11 +145,6 @@ function displayWeatherForecast(daily) {
 
     const today = daily.time[0];
 
-    const forecastTitle = document.createElement("h3");
-    forecastTitle.textContent = "Three-Day Forecast";
-
-    forecastContainer.appendChild(forecastTitle);
-
     const futureDays = daily.time
         .map((date, index) => ({
             date,
