@@ -1,0 +1,144 @@
+/* GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F4F7FA;
+    color: #263238;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #14213D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #007C83;
+}
+
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: #14213D;
+}
+
+h2 {
+    border-bottom: 2px solid #007C83;
+    padding-bottom: 0.5rem;
+}
+
+/* COLOR SCHEMA */
+
+.color-item {
+    margin: 1.5rem 0;
+}
+
+.color-box {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #263238;
+    border-radius: 5px;
+}
+
+.navy {
+    background-color: #14213D;
+}
+
+.teal {
+    background-color: #007C83;
+}
+
+.light-gray {
+    background-color: #F4F7FA;
+}
+
+.dark-gray {
+    background-color: #263238;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+/* TYPOGRAPHY */
+
+.poppins-example {
+    font-family: "Poppins", sans-serif;
+}
+
+.roboto-example {
+    font-family: "Roboto", sans-serif;
+}
+
+/* WIREFRAMES */
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #263238;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #14213D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (min-width: 700px) {
+
+    main {
+        padding: 0 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .color-item {
+        display: inline-block;
+        width: 45%;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+
+}
